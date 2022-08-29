@@ -1,30 +1,187 @@
-.toprow {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 3fr 1fr;
+}
+
+.header-toprow {
+  grid-column: 2;
+  grid-row: 1;
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 20px;
+  
 }
 
-.top-left {
+.header-top-left {
   display: flex;
   position: relative;
   place-self: center stretch;
 }
 
-.top-left div {
+.header-top-left div {
   margin: 5px;
  
 }
 
 .searchbar {
-  
   width: 70%;
 }
 
-.top-right {
+.header-top-right {
+  display: flex;
+  place-self: flex-end;
+}
+
+.header-top-right div {
+  margin: 5px;
+}
+
+.header-bottomrow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 20px;
+  grid-column: 2;
+}
+
+.header-bottom-left {
+  display: flex;
+  place-self: flex-start;
+}
+
+.header-bottom-left div {
+  margin: 5px;
+}
+
+.header-bottom-right .button {
+  margin: 5px;
+}
+
+.dashboard {
+  grid-row: 1 / 4;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 4fr;
+  margin: 10px;
+  justify-content: start;
+}
+
+.dashboard li {
+  list-style-type: none;
+}
+
+.dashboard-icon {
+  grid-row: 1;
+}
+
+.internal-items {
+  grid-row: 2;
+}
+
+.external-items {
+  grid-row: 3;
+}
+
+.projects {
+  grid-area: 2 / 2 / 4 / 3;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+.section-title {
+  margin-top: -40px;
+  position: absolute;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card .footer {
   display: flex;
 }
 
-.top-right div {
-  margin: 5px;
+.sidebar {
+  grid-area: 2 / 4 / 4 / 3;
 }
+
+.trending {
+  margin-top: 50px;
+  display: grid; 
+  padding: 15px;
+}
+
+.tegan {
+  margin: 5px;
+  grid-row: 1;
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+}
+
+.tegan .user-icon {
+  margin-right: 5px;
+  grid-column: 1;
+}
+
+.tegan .project-title {
+  grid-column: 2;
+}
+
+.morgan {
+  margin: 5px;
+  grid-row: 2;
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+}
+
+.morgan .user-icon {
+  margin-right: 5px;
+  grid-column: 1;
+}
+
+.morgan .project-title {
+  grid-column: 2;
+}
+
+.kendall {
+  margin: 5px;
+  grid-row: 3;
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+}
+
+.kendall .user-icon {
+  margin-right: 5px;
+  grid-column: 1;
+}
+
+.kendall .project-title {
+  grid-column: 2;
+}
+
+
+.alex {
+  margin: 5px;
+  grid-row: 4;
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+}
+
+.alex .user-icon {
+  margin-right: 5px;
+  grid-column: 1;
+}
+
+.alex .project-title {
+  grid-column: 2;
+}
+
 
