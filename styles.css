@@ -1,0 +1,30 @@
+.toprow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 20px;
+}
+
+.top-left {
+  display: flex;
+  position: relative;
+  place-self: center stretch;
+}
+
+.top-left div {
+  margin: 5px;
+ 
+}
+
+.searchbar {
+  
+  width: 70%;
+}
+
+.top-right {
+  display: flex;
+}
+
+.top-right div {
+  margin: 5px;
+}
+
