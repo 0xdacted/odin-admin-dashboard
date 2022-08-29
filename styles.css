@@ -9,7 +9,12 @@
 
 .container {
   display: grid;
-  grid-template: .5fr repeat(3, 1fr) / 1fr 3fr 1fr;
+  grid-template: .5fr repeat(3, 1fr) / .7fr 3fr 1fr;
+
+}
+
+.header {
+  grid-column: 2 / 4;
 }
 
 .header-toprow {
@@ -29,16 +34,16 @@
 
 .header-top-left div {
   margin: 5px;
- 
 }
 
 .searchbar {
-  width: 70%;
+  width: 80%;
 }
 
 .header-top-right {
+  grid-column: 2 / 4;
   display: flex;
-  place-self: flex-end;
+  align-items: flex-end;
 }
 
 .header-top-right div {
@@ -70,16 +75,19 @@
   grid-column: 1;
   display: grid;
   grid-template-rows: 1fr 2 fr 2fr 4fr;
-  margin: 10px;
   justify-content: start;
+  background-color: #38bdf8;
+  height: 100vh;
 }
 
 .dashboard li {
   list-style-type: none;
+  margin-left: 30px;
 }
 
 .dashboard-icon {
   grid-row: 1;
+  margin-left: 30px;
 }
 
 .internal-items {
