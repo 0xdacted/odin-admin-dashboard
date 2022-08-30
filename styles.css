@@ -187,6 +187,8 @@ a {
 
 .external-items {
   grid-row: 3;
+  position: relative;
+  margin-top: 40px;
 }
 
 .home-image {
@@ -252,6 +254,39 @@ a {
 .communities-text {
   position: absolute;
   top: 225px;
+  left: 70px;
+}
+
+.settings-image {
+  width: 15%;
+  height: auto;
+}
+
+.settings-text {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+.support-image {
+  width: 15%;
+  height: auto;
+}
+
+.support-text {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+}
+
+.privacy-image {
+  width: 15%;
+  height: auto;
+}
+
+.privacy-text {
+  position: absolute;
+  top: 97px;
   left: 70px;
 }
 
