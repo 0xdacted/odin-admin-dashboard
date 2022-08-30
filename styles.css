@@ -5,6 +5,7 @@
 
 .body {
   height: 100vh;
+  font-family: Roboto;
 }
 
 .container {
@@ -17,13 +18,31 @@
   grid-column: 2 / 4;
 }
 
+.header .bell {
+  max-width: 8%;
+  max-height: auto;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.header-toprow .user-icon {
+    max-width: 12%;
+    max-height: auto;
+    margin-right: 20px;
+}
+
 .header-toprow {
   grid-column: 2 / 4;
   grid-row: 1;
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 20px;
-  
+  margin-right: 0px;
+}
+
+.header-toprow .name {
+  font-weight: 900;
+  font-size: 16px;
 }
 
 .header-top-left {
@@ -55,6 +74,25 @@
   grid-template-columns: 3fr 1fr;
   margin: 20px;
   grid-column: 2;
+  margin-right: 0px;
+}
+
+.header-bottomrow .user-icon {
+  max-width: 9%;
+  max-height: auto;
+  margin-right: 5px;
+}
+
+.header-bottomrow .greeting {
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.header-bottomrow .user-name {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 0px;
 }
 
 .header-bottom-left {
@@ -67,7 +105,21 @@
 }
 
 .header-bottom-right .button {
-  margin: 5px;
+  margin: 10px;
+}
+
+.header .buttons {
+  margin-top: 20px;
+}
+
+.header button {
+  background-color: #38bdf8;
+  color: white;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  padding: 10px 15px 12px 15px;
+  font-size: .7rem;
 }
 
 .dashboard {
@@ -78,17 +130,22 @@
   justify-content: start;
   background-color: #38bdf8;
   height: 100vh;
+  color: #FFFFFF;
+  font-weight: 520;
 }
 
 .dashboard li {
   list-style-type: none;
   margin-left: 30px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .dashboard-icon {
   grid-row: 1;
   margin-top: 30px;
   margin-left: 30px;
+  font-size: 24px;
 }
 
 .internal-items {
@@ -106,7 +163,7 @@
   background-color: #d4d4d4;
   padding-top: 30px;
   padding-bottom: 20px;
-  height: 73.88vh;
+  height: 69.55vh;
 }
 
 .section-title {
@@ -158,7 +215,8 @@
 .sidebar {
   grid-area: 2 / 3 / 4 / 3;
   background-color: #d4d4d4;
-  height: 80.5vh;
+  height: 76.2vh;
+
 }
 
 .announcements {
@@ -198,8 +256,8 @@
   padding: 10px;
   background-color: #FFFFFF;
   position: relative;
-  height: 30vh;
-  margin-top: 63px;
+  height: 28vh;
+  margin-top: 45px;
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 20px;
