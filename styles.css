@@ -16,6 +16,7 @@
 
 .header {
   grid-column: 2 / 4;
+  position: relative;
 }
 
 .header .bell {
@@ -110,11 +111,15 @@
 }
 
 .header-bottom-right .button {
-  margin: 10px;
+  margin: 10px; 
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .header .buttons {
   margin-top: 20px;
+  position: absolute;
+  right: 50px;
 }
 
 .header button {
@@ -279,13 +284,21 @@
   color: #a1a1aa;
 }
 
+.trending .user-icon {
+  width: 50%;
+  height: auto;
+}
+
+.trending .project-title, .trending .username {
+    margin-left: -20px;
+}
+
 
 .tegan {
   margin: 5px;
   grid-row: 1;
   display: grid;
   grid-template: 1fr / 1fr 2fr;
-  
 }
 
 .tegan .user-icon {
