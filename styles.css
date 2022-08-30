@@ -25,6 +25,11 @@
   margin-bottom: 5px;
 }
 
+.header .search-icon {
+  max-width: 2%;
+  max-height: auto;
+  margin-right: 20px;
+}
 .header-toprow .user-icon {
     max-width: 12%;
     max-height: auto;
@@ -78,7 +83,7 @@
 }
 
 .header-bottomrow .user-icon {
-  max-width: 9%;
+  max-width: 10%;
   max-height: auto;
   margin-right: 5px;
 }
@@ -270,7 +275,7 @@
 }
 
 .trending .project-title {
-  margin-top: -30px;
+  margin-top: -20px;
   color: #a1a1aa;
 }
 
