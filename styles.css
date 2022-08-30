@@ -121,12 +121,22 @@
   background-color: #FFFFFF;
   color: black;
   margin: 10px;
-  
+  border-left: 5px solid #fcd34d;
+  position: relative;
 }
 
 .projects .text {
   padding: 10px;
   font-weight: 300;
+  font-size: 12px;
+}
+
+.projects .title {
+  font-weight: 800;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .projects .section-title {
@@ -136,8 +146,9 @@
 
 .card .footer {
   display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
 }
 
 .footer, .favorite, .watchlist, .link {
@@ -168,11 +179,13 @@
 .maintenance {
   grid-row: 1;
   padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .community-day {
   grid-row: 2;
   padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .privacy-policy {
@@ -190,6 +203,7 @@
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 20px;
+  font-size: 14px;
 }
 
 .trending .section-title {
@@ -197,15 +211,21 @@
   top: 0px;
 }
 
+.trending .project-title {
+  margin-top: -30px;
+  color: #a1a1aa;
+}
+
+
 .tegan {
   margin: 5px;
   grid-row: 1;
   display: grid;
   grid-template: 1fr / 1fr 2fr;
+  
 }
 
 .tegan .user-icon {
-  margin-right: 5px;
   grid-column: 1;
 }
 
@@ -221,7 +241,6 @@
 }
 
 .morgan .user-icon {
-  margin-right: 5px;
   grid-column: 1;
 }
 
@@ -237,7 +256,6 @@
 }
 
 .kendall .user-icon {
-  margin-right: 5px;
   grid-column: 1;
 }
 
@@ -254,7 +272,6 @@
 }
 
 .alex .user-icon {
-  margin-right: 5px;
   grid-column: 1;
 }
 
